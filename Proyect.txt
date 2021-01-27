@@ -1,26 +1,3 @@
- import os
- 
-def menu():
-	
-	import time
-
-while True:
-    options = {0 : show_Molinuco,
-               1 : show_cotopaxi,
-               2 : show_guayaquil,
-			   3 : exit,
-
-    if opcion == "0":
-        print(("You typed Molinuco.\n"))
-
-    if opcion == "1":
-        print("You select cotopaxi\n")
-
-    if opcion == "2":
-	    print("You select guayaquil\n")
-	
-	if option == "3"
-        break
 import folium
 def show_Molinuco():
     print ("You typed Molinuco.\n")
@@ -30,6 +7,7 @@ def show_Molinuco():
     mapa.add_child(feature_group)
     mapa.add_child(folium.map.LayerControl())
     mapa.save("C:\\Users\\Usuario\\Desktop\\Molinuco.html")
+
 def show_cotopaxi():
     print ("You select cotopaxi\n")
     mapa=folium.Map(location=[-2,-78],zoom_start=7,control_scale=True, tiles="openStreetMap")
@@ -38,6 +16,7 @@ def show_cotopaxi():
     mapa.add_child(feature_group)
     mapa.add_child(folium.map.LayerControl())
     mapa.save("C:\\Users\\Usuario\\Desktop\\cotopaxi.html")
+
 def show_guayaquil():
     print ("You select guayaquil\n")
     mapa=folium.Map(location=[-2,-78],zoom_start=7,control_scale=True, tiles="openStreetMap")
