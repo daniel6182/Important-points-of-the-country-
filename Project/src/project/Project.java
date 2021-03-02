@@ -129,6 +129,50 @@ case 2:
                     i = vistantPercentage(peopleVisitant, habitants, value);
                     System.out.println("percentage of" + i + "is equal to ->" + i);
                     break;
+                    
+                    case 6:
+
+                    String[][] atractivosturisticos = new String[4][3];
+                    String[] provincias = new String[4];
+                    Scanner scan = new Scanner(System.in);
+                    principalesLugaresTuristicos(provincias, scan, atractivosturisticos);
+                    break;
+                default:
+                    System.out.println("Invalid option\n\n\n");
+                    break;
+                    
+                case 7:
+                    System.out.println("See you later alligators");
+                    System.exit(0);
+             }
+
+        } while (option != 7);
+    }
+
+    public static double ShowTheDistanceBetweenTwoEcuatoriansVolcanos(double Coordinatex1, double Coordinatex2, double Coordinatey1, double Coordinatey2) {
+        double dist;
+        double first;
+        double second;
+        first = Math.pow(Coordinatex2 - Coordinatex1, 2);
+        second = Math.pow(Coordinatey2 - Coordinatey1, 2);
+
+        dist = (double) Math.sqrt(first + second);
+
+        return (double) dist;
+
+    }
+
+    public static double performTheDistanceBetweenTwoPlaces(double Sx1, double Sx2, double Sy1, double Sy2) {
+        double disites;
+        double place1;
+        double place2;
+        place1 = Math.pow(Sx2 - Sx1, 2);
+        place2 = Math.pow(Sy2 - Sy1, 2);
+
+        disites = (double) Math.sqrt(place1 + place2);
+
+        return (double) disites;
+    }
 
                 
 =======
