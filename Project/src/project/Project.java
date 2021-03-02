@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package project;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
 /**
@@ -56,3 +51,5 @@ public class Project {
                     break;
 
                 
+=======
+>>>>>>> ae9edb58da7b4c580a3c3bd6ddbd09a49bd212c3
