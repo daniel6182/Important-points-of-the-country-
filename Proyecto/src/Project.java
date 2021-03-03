@@ -172,4 +172,47 @@ public class Project {
         return (double) disites;
     }
 
-                
+      public static float calculateThePopulationPercent(int Currentvariable, int Oldvariable, int valor) {
+        float y = 0.0F;
+
+        y = (((float) Currentvariable - (float) Oldvariable) / (float) Oldvariable) * valor;
+
+        return y;
+    }
+
+    public static int ShowTheNumberOfRiversAndReservesOfEcuador(int mainRivers, int wildlifeReserves) {
+
+        int riversAndReserves;
+        riversAndReserves = mainRivers + wildlifeReserves;
+        System.out.println("the total number of wildlife reserves and main rives of the Ecuador is --> " + riversAndReserves);
+        return riversAndReserves;
+    }
+
+    public static float vistantPercentage(int peopleVisitant, int habitants, int value) {
+        float i = 0.0F;
+        i = ((float) peopleVisitant / (float) habitants) * value;
+        return i;
+    }
+
+    private static void principalesLugaresTuristicos(String[] provincias, Scanner scan, String[][] atractivosturisticos) {
+        System.out.println("Introduzca el nombre de cuatro provicias de su preferencia.");
+        int i = 0;
+        int j = 0;
+        for (i = 0; i < 4; i++) {
+            provincias[i] = scan.nextLine();
+        }
+        for (i = 0; i < 4; i++) {
+            System.out.println("Introduzca los principales atractivos turísticos de " + provincias[i] + ".");
+            for (j = 0; j < 3; j++) {
+                atractivosturisticos[i][j] = scan.nextLine();
+            }
+        }
+        System.out.print("\nLos provincias y sus principales atractivos intoducidos son los siguientes: \n");
+        for (i = 0; i < 4; i++) {
+            System.out.print("\n" + provincias[i] + ": \t");
+            for (j = 0; j < 3; j++) {
+                System.out.print(atractivosturisticos[i][j] + "\t");
+            }
+        }
+    }
+}          
