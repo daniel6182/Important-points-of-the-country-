@@ -12,6 +12,47 @@ public class Project {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        boolean mainLoop = true;
+        int option;
+
+        do {
+            System.out.println(" ========= Proyect =======");
+            System.out.println("1. -> distance  volcanos");
+            System.out.println("2. -> distance  province");
+            System.out.println("3. -> percentage population");
+            System.out.println("4. -> number of rivers and reserves");
+            System.out.println("5. -> percentage visitan");
+            System.out.println("6. -> Turistic places");
+            System.out.println("7. -> Exit");
+            
+
+            System.out.println("Enter your menu option --> ");
+            option = input.nextInt();
+
+            switch (option) {
+
+                case 1:
+                    double Coordinatex1;
+                    double Coordinatex2;
+                    double Coordinatey1;
+                    double Coordinatey2;
+                    double dist;
+                    System.out.println(" <-- Insert a coordinatex1 -->");
+                    Coordinatex1 = input.nextInt();
+
+                    System.out.println(" <-- Insert a coordinatex2 -->");
+                    Coordinatex2 = input.nextInt();
+
+                    System.out.println(" <-- Insert a coordinatey1 -->");
+                    Coordinatey1 = input.nextInt();
+
+                    System.out.println(" <-- Insert a coordinatey2 -->");
+                    Coordinatey2 = input.nextInt();
+
+                    dist = ShowTheDistanceBetweenTwoEcuatoriansVolcanos(Coordinatex1, Coordinatex2, Coordinatey1, Coordinatey2);
+                    System.out.println(" <- dist is -> " + dist);
+                    break;
 
         case 2:
 
