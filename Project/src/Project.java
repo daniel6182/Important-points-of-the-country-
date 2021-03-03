@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 import java.util.Scanner;
 
 /**
@@ -13,8 +12,6 @@ public class Project {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-        
 
                 case 4:
 
@@ -51,5 +48,3 @@ public class Project {
                     break;
 
                 
-=======
->>>>>>> ae9edb58da7b4c580a3c3bd6ddbd09a49bd212c3
