@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Alessio
+ * @author group 10 
  */
 public class Project {
 
