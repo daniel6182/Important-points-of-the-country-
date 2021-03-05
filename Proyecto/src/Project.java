@@ -1,30 +1,10 @@
-
-import java.util.Scanner;
-
-/**
- *
- * @author group 10 
- */
-public class Project {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner input = new Scanner(System.in);
+Scanner input = new Scanner(System.in);
         boolean mainLoop = true;
         int option;
 
         do {
             System.out.println(" ========= Proyect =======");
-            System.out.println("1. -> distance  volcanos");
-            System.out.println("2. -> distance  province");
-            System.out.println("3. -> percentage population");
-            System.out.println("4. -> number of rivers and reserves");
-            System.out.println("5. -> percentage visitan");
-            System.out.println("6. -> Turistic places");
-            System.out.println("7. -> Exit");
+            ImportantPointOfTheCountry();
             
 
             System.out.println("Enter your menu option --> ");
@@ -54,7 +34,7 @@ public class Project {
                     System.out.println(" <- dist is -> " + dist);
                     break;
 
-        case 2:
+                case 2:
 
                     double Sx1;
                     double Sx2;
@@ -94,6 +74,7 @@ public class Project {
                     y = calculateThePopulationPercent(Currentvariable, Oldvariable, valor);
                     System.out.println(" percentage of" + y + "is equal to ->" + y);
                     break;
+
                 case 4:
 
                     int mainRivers;
@@ -127,8 +108,8 @@ public class Project {
                     i = vistantPercentage(peopleVisitant, habitants, value);
                     System.out.println("percentage of" + i + "is equal to ->" + i);
                     break;
-                    
-                    case 6:
+
+                case 6:
 
                     String[][] atractivosturisticos = new String[4][3];
                     String[] provincias = new String[4];
@@ -140,11 +121,20 @@ public class Project {
                     break;
                     
                 case 7:
-                    System.out.println("See you later alligators");
-                    System.exit(0);
+                    System.out.println("");
              }
 
         } while (option != 7);
+    }
+
+    private static void ImportantPointOfTheCountry() {
+        System.out.println("1. -> distance  volcanos");
+        System.out.println("2. -> distance  province");
+        System.out.println("3. -> percentage population");
+        System.out.println("4. -> number of rivers and reserves");
+        System.out.println("5. -> percentage visitan");
+        System.out.println("6. -> Turistic places");
+        System.out.println("7. -> Exit");
     }
 
     public static double ShowTheDistanceBetweenTwoEcuatoriansVolcanos(double Coordinatex1, double Coordinatex2, double Coordinatey1, double Coordinatey2) {
@@ -172,7 +162,7 @@ public class Project {
         return (double) disites;
     }
 
-      public static float calculateThePopulationPercent(int Currentvariable, int Oldvariable, int valor) {
+    public static float calculateThePopulationPercent(int Currentvariable, int Oldvariable, int valor) {
         float y = 0.0F;
 
         y = (((float) Currentvariable - (float) Oldvariable) / (float) Oldvariable) * valor;
@@ -215,4 +205,4 @@ public class Project {
             }
         }
     }
-}          
+}
